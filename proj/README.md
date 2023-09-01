@@ -29,6 +29,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Additional
 
-https://maskito.dev/frameworks/angular
-https://taiga-ui.dev/components/input
-https://cssgradient.io/
+- https://maskito.dev/frameworks/angular
+- https://taiga-ui.dev/components/input
+- https://cssgradient.io/
