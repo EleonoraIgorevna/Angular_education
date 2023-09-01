@@ -1,0 +1,16 @@
+
+
+<p *ngIf="inputFromRow; else linkForNull">
+	<tui-input class="b-form" [maskito]="mask" formControlName="cellValue"
+		[style.border:focus-visible]="'4px solid green'" [style.border]="'1px solid purple'">
+		<input tuiTextfield />
+	</tui-input>
+</p>
+<ng-template #linkForNull>
+
+	<p class="b-forma">
+		<tui-input formControlName="cellValue">
+			<input tuiTextfield />
+		</tui-input>
+	</p>
+</ng-template>

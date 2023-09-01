@@ -1,0 +1,39 @@
+@import "@taiga-ui/styles/taiga-ui-global"; 
+
+
+
+.tui-root{
+	margin: 0 auto;
+	display: flex;
+	width: 100%;
+ 	.shadow(1); 
+	border-radius: var(--tui-radius-m);
+	margin: 100px 100px 100px 100px ;
+	background: radial-gradient(circle, rgba(241, 198, 221, 1) 0%, rgba(183, 214, 250, 0.4962359943977591) 100%);
+}
+
+// .cross {
+// 	margin: 0 auto;
+// 	display: flex;
+// 	width: 100%;
+// }
+
+@import '@taiga-ui/core/styles/taiga-ui-local.less';
+
+// This goes into global, non-encapsulated styles
+[tuiWrapper][data-appearance='custom'] {
+	background: #bc71c9;
+	color: #fff;
+
+	.wrapper-hover({
+		background: #a381ff;
+	});
+
+.wrapper-active({
+	background: #8f75d1;
+});
+
+.wrapper-disabled({
+	background: #eaecee;
+});
+}
