@@ -7,9 +7,10 @@ import { AppComponent } from './app.component';
 import { RowComponent } from './row/row.component';
 import { CellComponent } from './row/cell/cell.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { TuiInputModule } from '@taiga-ui/kit';
 import { MaskitoModule } from '@maskito/angular';
+import { TuiInputModule } from '@taiga-ui/kit';
 import { TuiButtonModule } from '@taiga-ui/core';
+import { CrosswordModule } from './crossword/crossword.module';
 
 @NgModule({
   declarations: [
@@ -26,11 +27,12 @@ import { TuiButtonModule } from '@taiga-ui/core';
     TuiInputModule,
     ReactiveFormsModule,
     MaskitoModule,
-    TuiButtonModule
-],
-  providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
+    TuiButtonModule,
+    CrosswordModule
+  ],
+  providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]
 })
-  
+
 
 export class AppModule { }

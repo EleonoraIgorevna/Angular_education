@@ -1,22 +1,16 @@
+<!-- <div class="cross">
+
+  <app-row *ngFor="let row of crosswordArr" [inputFromMain]="row">
+  </app-row>
+  <button appearance="custom" tuiButton type="button">
+    See LESS tab
+  </button>
+
+</div> -->
 
 
 
-
-<!-- 
-
-
-<tui-root class='tui-root'>
-
-
-  <div class="cross">
-
-    <app-row *ngFor="let input of mainArray" [inputFromMain]="input">
-    </app-row>
-    <button appearance="custom" tuiButton type="button">
-      See LESS tab
-    </button>
-
-  </div>
-
-</tui-root>
- -->
+<crossword
+  [crosswordInput]="crosswordArr"
+>
+</crossword>
