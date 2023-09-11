@@ -1,0 +1,15 @@
+<div
+	class="crossword"
+	[style.--columns]="sizeCrossword.xSize"
+	[style.--rows]="sizeCrossword.ySize"
+>
+	<!-- <ng-content select="crossword-cell"></ng-content> -->
+	<!-- <ng-container *ngFor="let row of crosswordInput | async"> -->
+		
+	<ng-container *ngFor="let row of crossword$ | async; let i = index; trackBy: trackByFn">
+		<ng-container *ngFor="let cell of row; let j = index">
+			<crossword-cell [cell]="cell" [i]="i" [j]="j">
+			</crossword-cell>
+		</ng-container>
+	</ng-container>
+</div>
