@@ -11,6 +11,7 @@ import { MaskitoModule } from '@maskito/angular';
 import { TuiInputModule } from '@taiga-ui/kit';
 import { TuiButtonModule } from '@taiga-ui/core';
 import { CrosswordModule } from './crossword/crossword.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { CrosswordModule } from './crossword/crossword.module';
     ReactiveFormsModule,
     MaskitoModule,
     TuiButtonModule,
-    CrosswordModule
+    CrosswordModule,
+
   ],
   providers: [{ provide: TUI_SANITIZER, useClass: NgDompurifySanitizer }],
   bootstrap: [AppComponent]

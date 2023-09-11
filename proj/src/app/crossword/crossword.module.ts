@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CrosswordCellComponent } from './crossword-cell/crossword-cell.component';
-import { CrosswordComponent } from './crossword/crossword.component';
+import { CrosswordCellComponent } from './components/crossword-cell/crossword-cell.component';
+import { CrosswordComponent } from './components/crossword/crossword.component';
 import { TuiInputModule } from '@taiga-ui/kit';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaskitoModule } from '@maskito/angular';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MaskitoModule } from '@maskito/angular';
     ReactiveFormsModule,
     FormsModule,
     MaskitoModule,
+    HttpClientModule
   ],
   exports: [
     CrosswordComponent,
